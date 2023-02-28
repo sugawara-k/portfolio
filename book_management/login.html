@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ログイン画面</title>
+    <link href="style.css" rel="stylesheet" media="all">
+</head>
+<body>
+    <header>
+        <h2>ポートフォリオ</h2>
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="../index.html">TOP</a></li>
+                <li><a href="overview.html">制作物</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>書籍管理アプリケーション</h1>
+    <div  class="portfolioMenu">
+        <ul>
+            <li><a href="overview.html">概要</a></li>
+            <li><a href="top.html">トップ画面</a></li>
+            <li><a href="login.html">ログイン画面</a></li>
+            <li><a href="search.html">登録書籍検索画面</a></li>
+            <li><a href="APIsearch.html">Google Books APIs<br>検索結果画面</a></li>
+            <li><a href="detail.html">書籍詳細画面</a></li>
+            <li><a href="impression.html">他(コード詳細や感想等)</a></li>
+        </ul>
+    </div>
+    <h2>ログイン画面</h2>
+    <p>ログイン処理が完了した時はトップ画面へ遷移する</p>
+    <p>ユーザIDまたはパスワードの入力に失敗した場合はログインエラーページに遷移</p>
+    <p>ヘッダーのログインアイコンをクリックする他に、<br>ログイン前に登録書籍一覧へのアイコン、Google Books APIs 検索の画面で登録、<br>どちらかをクリックした場合にもログイン画面に飛ばされるようになっている</p>
+    <div class="image_login">
+        <figure>
+            <img src="img/window/ログイン画面.png" alt="ログイン画面">
+            <figcaption>ログイン画面</figcaption>
+        </figure>
+        <figure>
+            <img src="img/window/ログインエラー.png" alt="エラー">
+            <figcaption>ログインエラー時</figcaption>
+        </figure>
+    </div>
+    <p>ログイン画面の新規登録のリンクから新規登録画面に移動でき、DBに新たにユーザ情報を登録できる<br>登録後は完了した旨のメッセージが表示されたログイン画面に遷移する</p>
+    <div class="image_login">
+        <figure>
+            <img src="img/window/新規登録.png" alt="新規登録">
+            <figcaption>新規登録画面</figcaption>
+        </figure>
+        <figure>
+            <img src="img/window/新規登録完了.png" alt="登録完了">
+            <figcaption>新規登録完了時</figcaption>
+        </figure>
+    </div>
+    <p>ヘッダーのログアウトアイコンをクリックすることでログアウト画面に遷移しログアウト処理が完了する</p>
+    <div class="image_login single">
+        <figure>
+            <img src="img/window/ログアウト.png" alt="ログアウト">
+            <figcaption>ログアウト画面</figcaption>
+        </figure>
+    </div>
+</body>
+</html>

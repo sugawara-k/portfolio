@@ -1,0 +1,142 @@
+header {
+    width: 100%; /* 幅いっぱいを指定 */
+    height: 50px; /* 高さを50pxに指定 */
+    padding: 20px 50px; /* ヘッダーに上下左右それぞれ余白を指定 */
+    box-sizing: border-box; /* padding分を含んで幅を100%にするため */
+    position: sticky; /* ウィンドウを基準に画面に固定 */
+    top: 0; /* 上下の固定位置を上から0pxにする */
+    left: 0; /* 左右の固定位置を左から0pxにする */
+    display: flex; /* 中の要素を横並びにする */
+    align-items: center; /* 中の要素を上下中央に並べる */
+    border-bottom: solid 1px #5d627b;
+    font-family: Helvetica Neue;
+    background-color: #eee;
+}
+
+header .nav .menu {
+    display: flex; /* 中の要素を横並びにする */
+}
+
+header .nav .menu li {
+    list-style: none; /* リストの[・]を消す */
+}
+
+header .nav .menu li + li {
+    margin-left: 40px; /* メニューそれぞれに間隔をあけるため */
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(0, 0, 0);
+}
+
+.portfolioMenu ul {
+    padding: 0 20px;
+    list-style: none;
+    display: flex;
+}
+
+.portfolioMenu li {
+    width: 100%;
+    margin: auto 0;
+    text-align: center;
+    border-right: 1px solid #111;
+}
+
+.portfolioMenu ul li a {
+    display: block;
+}
+
+.portfolioMenu ul li a:hover {
+    background-color: #eee;
+}
+
+.portfolioMenu li:first-child {
+    border-left: 1px solid #111;
+}
+
+.portfolioMenu li:nth-child(4) {
+    border-right: none;
+}
+
+.portfolioMenu li:nth-child(5) {
+    border-left: 1px solid #111;
+}
+
+/* トップ画面 */
+.image_top {
+    display: flex;
+}
+
+.image_top figcaption {
+    text-align: center;
+}
+
+.image_top img {
+    min-width: 500px;
+    max-width: 100%;
+}
+
+.icon_top {
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    margin: 0 20px;
+}
+
+.icon_top dd {
+    margin-left: 0;
+}
+
+/* ログイン画面 */
+.image_login {
+    display: flex;
+}
+
+.image_login figcaption {
+    text-align: center;
+}
+
+.image_login img {
+    min-width: 500px;
+    max-width: 100%;
+}
+
+.image_login.single {
+    max-width: 50%;
+}
+
+/* 登録書籍検索画面 */
+.image_search img {
+    max-width: 100%;
+}
+
+.image_search figcaption {
+    text-align: center;
+}
+
+.image_search.status {
+    max-width: 75%;
+}
+
+/* Google Books APIs 検索結果画面 */
+.image_APIsearch img {
+    max-width: 100%;
+}
+
+.image_APIsearch figcaption {
+    text-align: center;
+}
+
+/* 詳細画面 */
+.image_detail img {
+    max-width: 100%;
+}
+
+.image_detail figcaption {
+    text-align: center;
+}

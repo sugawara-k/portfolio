@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>概要</title>
+    <link href="style.css" rel="stylesheet" media="all">
+</head>
+<body>
+    <header>
+        <h2>ポートフォリオ</h2>
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="../index.html">TOP</a></li>
+                <li><a href="overview.html">制作物</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>書籍管理アプリケーション</h1>
+    <div  class="portfolioMenu">
+        <ul>
+            <li><a href="overview.html">概要</a></li>
+            <li><a href="top.html">トップ画面</a></li>
+            <li><a href="login.html">ログイン画面</a></li>
+            <li><a href="search.html">登録書籍検索画面</a></li>
+            <li><a href="APIsearch.html">Google Books APIs<br>検索結果画面</a></li>
+            <li><a href="detail.html">書籍詳細画面</a></li>
+            <li><a href="impression.html">他(コード詳細や感想等)</a></li>
+        </ul>
+    </div>
+    <h2>概要</h2>
+    <h3>制作の目的</h3>
+    <ul>
+        <li>訓練で学んだ技術を使ったwebアプリケーションを作りたい</li>
+        <li>読書が趣味なので自宅の書籍を管理したい</li>
+        <li>未読既読購入予定、読了日、感想をDBで保存したい</li>
+        <li>APIにも触れてみたい</li>
+    </ul>
+    <p>そこで、JSP及びServletを経由しデータベースを使用した書籍情報を管理するシステムを作ることとした<br>
+        また、Google Books APIs を利用し外部からデータを取得できるようにする</p>
+        <h3>開発期間</h3>
+        <p>3週間</p>
+        <h3>機能</h3>
+        <ul>
+            <li>ユーザーのログイン機能</li>
+            <li>データの登録・変更・削除の機能</li>
+            <li>登録データの検索</li>
+            <li>Google Books APIs による検索 > 検索結果からデータを登録</li>
+        </ul>
+        
+        <h3>概要図</h3>
+        <img class="outline" src="img/fig/概要図.png" alt="概要図">
+        <h3>MVCパターン</h3>
+        <img class="MVC" src="img/fig/MVCモデル.png" alt="MVCモデル">
+        <h3>テーブル設定</h3>
+        <img class="DBtable" src="img/fig/DBtable.png" alt="DBテーブル">
+        <h3>開発環境</h3>
+        <dl>
+            <dt>OS</dt>
+            <dd>Windows 10</dd>
+            <br>
+            <dt>開発ツール</dt>
+            <dd>Eclipse 2021/Java version.11</dd>
+            <br>
+            <dt>Webサーバ</dt>
+            <dd>Apache Tomcat/10.0</dd>
+            <br>
+            <dt>DB</dt>
+            <dd>MySQL</dd>
+        </dl>
+</body>
+</html>

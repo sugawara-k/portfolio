@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>トップ画面</title>
+    <link href="style.css" rel="stylesheet" media="all">
+</head>
+<body>
+    <header>
+        <h2>ポートフォリオ</h2>
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="../index.html">TOP</a></li>
+                <li><a href="overview.html">制作物</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>書籍管理アプリケーション</h1>
+    <div  class="portfolioMenu">
+        <ul>
+            <li><a href="overview.html">概要</a></li>
+            <li><a href="top.html">トップ画面</a></li>
+            <li><a href="login.html">ログイン画面</a></li>
+            <li><a href="search.html">登録書籍検索画面</a></li>
+            <li><a href="APIsearch.html">Google Books APIs<br>検索結果画面</a></li>
+            <li><a href="detail.html">書籍詳細画面</a></li>
+            <li><a href="impression.html">他(コード詳細や感想等)</a></li>
+        </ul>
+    </div>
+    <h2>トップ画面</h2>
+    <p>Google Books APIs を利用した書籍検索(検索条件はタイトル、著者名で片方を空欄で単一検索、両方入力で複合検索)が可能</p>
+    <p>ログイン後は登録書籍一覧へのアクセス、登録書籍検索(検索条件はタイトル、著者名、ステータスの3種でそれぞれ単一条件での検索)も利用可能</p>
+    <p>ステータスはプルダウンで選択するようにし、DBに登録した未読、既読、購入予定の3種類で検索可能</p>
+    <br>
+    <div class="image_top">
+        <figure>
+            <img src="img/window/トップ画面.png" alt="トップ画面">
+            <figcaption>ログイン前</figcaption>
+        </figure>
+        <figure>
+            <img src="img/window/トップ画面(ログイン後).png" alt="トップ画面">
+            <figcaption>ログイン後</figcaption>
+        </figure>
+    </div>
+    <br>
+    <h3>ヘッダー</h3>
+    <p>アイコンからログイン処理,トップ画面と登録書籍一覧画面にアクセス可<br>またログイン後はログインユーザ名とログアウトアイコンを表示</p>
+    <div class="icon_top">
+        <dl>
+            <dt><img src="img/icon/003-login.png" alt="ログインアイコン"></dt><dd>ログイン処理を行う</dd>
+        </dl>
+        <dl>
+            <dt><img src="img/icon/001-home.png" alt="ホームアイコン"></dt><dd>トップ画面へ</dd>
+        </dl>
+        <dl>
+            <dt><img src="img/icon/002-books.png" alt="ブックアイコン"></dt><dd>登録書籍一覧画面へ</dd>
+        </dl>
+        <dl>
+            <dt><img src="img/icon/004-logout.png" alt="ログアウトアイコン"></dt><dd>ログアウト処理を行う</dd>
+        </dl>
+    </div>
+</body>
+</html>

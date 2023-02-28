@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>他</title>
+    <link href="style.css" rel="stylesheet" media="all">
+</head>
+<body>
+    <header>
+        <h2>ポートフォリオ</h2>
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="../index.html">TOP</a></li>
+                <li><a href="overview.html">制作物</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>書籍管理アプリケーション</h1>
+    <div  class="portfolioMenu">
+        <ul>
+            <li><a href="overview.html">概要</a></li>
+            <li><a href="top.html">トップ画面</a></li>
+            <li><a href="login.html">ログイン画面</a></li>
+            <li><a href="search.html">登録書籍検索画面</a></li>
+            <li><a href="APIsearch.html">Google Books APIs<br>検索結果画面</a></li>
+            <li><a href="detail.html">書籍詳細画面</a></li>
+            <li><a href="impression.html">他(コード詳細や感想等)</a></li>
+        </ul>
+    </div>
+    <h2>他</h2>
+    <h3>コード</h3>
+    <a href="" alt="">コードへのリンク</a>
+    <h3>工夫、苦労した点</h3>
+    <ul>
+        <li>Google Books APIs を組み込む方法</li>
+        <li>Httpリクエストするとjson形式でレスポンスが帰ってくるのはすぐにわかったがどうやってデータを欲しい型に分割するのかがわからなくて苦労</li>
+        <li>jacksonの使い方 javaでjsonデータを取り扱う方法</li>
+        <li>HttpClientクラスの使い方 Connection</li>
+    </ul>
+    <h3>改善点</h3>
+    <ul>
+        <li>設計をしっかりする 作成途中に思い付きで機能やデータを追加していったのでコードが汚くなった</li>
+        <li>オリジナリティが薄い どこかで見たことや利用したことのある機能しかない、自分が使いたいように作ったという点だけが価値のあるものになっている</li>
+    </ul>
+    <h3>今後追加したいこと</h3>
+    <ul>
+        <li>jspファイルにスタイルタグで直接書き込んでいる部分をcssに分割</li>
+        <li>本番環境での実装</li>
+        <li>あいまい検索</li>
+        <li>登録済み書籍情報の一部分を選択し、API検索結果の情報に書き換える</li>
+        <li>admin権限特有の機能(ユーザーの情報削除、権限の変更等)</li>
+        <li>ユーザー毎にテーブルを作成</li>
+        <li>CSV等での出力</li>
+        <li>検索結果のソート機能</li>
+    </ul>
+</body>
+</html>
